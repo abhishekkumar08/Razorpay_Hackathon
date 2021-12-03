@@ -154,7 +154,11 @@ const Homepage = () => {
           flexDirection: 'column',
           alignItems: 'center',
         }}
-      ></div>
+      >
+        {data.map((item, index) => {
+          return <TopDestination item={item} key={index} />;
+        })}
+      </div>
     </div>
   );
 };
