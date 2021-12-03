@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import data from '../../data';
 import TopDestination from './TopDestination';
+import './Homepage.css';
 
 const Homepage = () => {
-  // const things = data.map((pieces) => pieces.items.map((thing) => thing));
   const [state, setState] = useState('');
   return (
     <div
@@ -154,9 +154,7 @@ const Homepage = () => {
           flexDirection: 'column',
           alignItems: 'center',
         }}
-      >
-       
-      </div>
+      ></div>
     </div>
   );
 };

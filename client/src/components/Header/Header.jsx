@@ -27,7 +27,7 @@ const Header = () => {
 
       <div style={{ display: 'flex' }}>
         <div style={{ marginRight: '3rem' }}>
-          <Link to="/contact">Cart</Link>
+          <Link to="/">Home</Link>
         </div>
         <div>
           <Link to="/about">About</Link>
