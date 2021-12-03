@@ -1,7 +1,11 @@
+
+
 const data = [
   {
     id: '1',
     name: 'Bihar',
+    iconImg:
+      'https://iconape.com/wp-content/files/sj/257322/png/government-of-bihar-logo.png',
     description:
       'Bihar is a place full of history and spiritual significance. Located in the eastern part of India, this state is known as the land of monasteries. There are many things that make this place worth visiting.',
     badges: [
