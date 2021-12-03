@@ -25,7 +25,7 @@ const TopDestination = ({ item }) => {
           }}
         >
           <div style={{ width: '60rem', display: 'flex' }}>
-            <div>
+            <div >
               <img src={item.mainImg} alt="Bihar" width="300" height="300" />
             </div>
             <div style={{ padding: '0rem 1rem 1rem 1rem' }}>
