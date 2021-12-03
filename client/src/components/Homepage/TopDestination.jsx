@@ -110,6 +110,59 @@ const TopDestination = ({ item }) => {
           })}
         </div>
       </div>
+       {/* antique things */}
+       <div style={{ padding: '1rem' }}>
+        <div
+          style={{
+            marginBottom: '2rem',
+            textAlign: 'center',
+            fontSize: '1.5rem',
+            fontWeight: '700',
+          }}
+        >
+          Top Antique Things Indigenous Here
+        </div>
+        <div
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+          }}
+        >
+          {item.items.map((thing) => {
+            return (
+              <div className="card">
+                <div
+                  style={{
+                    color: '#63687A',
+                    fontSize: '1rem',
+                    textAlign: 'center',
+                    paddingTop: '0.5rem',
+                    height: '400px',
+                    width: '300px',
+                    borderRadius: '50px',
+                  }}
+                >
+                  <div>
+                    <img
+                      className="card-style-img"
+                      src={thing.itemImg}
+                      alt="item"
+                    />
+                  </div>
+                  <div className=" card-text">
+                    <h4>{thing.itemName}</h4>
+                    <p>{thing.description}</p>
+                  </div>
+                 
+                    <button type="submit" className="card-stats">Order Now!</button>
+                 
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
       </div>
   )};
 
