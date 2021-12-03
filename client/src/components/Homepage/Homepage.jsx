@@ -78,12 +78,23 @@ const Homepage = () => {
               style={{
                 background: '#fff',
                 color: 'black',
-                width: '100px',
-                height: '100px',
+                width: '150px',
+                height: '150px',
                 padding: '0.5rem',
+                textAlign: 'center',
+                borderRadius: '50%',
               }}
             >
-              {item.name}
+              <div>
+                <img
+                  src={item.iconImg}
+                  alt=""
+                  width="100"
+                  height="100"
+                  style={{ marginBottom: '0.5rem' }}
+                />
+                <div>{item.name}</div>
+              </div>
             </div>
           );
         })}
