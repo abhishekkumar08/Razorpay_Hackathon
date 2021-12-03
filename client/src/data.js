@@ -79,7 +79,7 @@ const data = [
     id: '2',
     name: 'Delhi',
     description:
-      '"The Capital City of India", Delhi is a cosmopolitan city with a historic old Delhi and the modern New Delhi. You can\'t define Delhi in just few words. The city is too dynamic for that. It\'s rich history saturated with old stories reflects in beautiful heritage buildings tucked around the sprawling city. The dusty patina of the old stonewalls gives a rumbling beauty to the city landscape and one can almost hear the sounds of the past echoing.',
+      '"The Capital City of India", Delhi is a cosmopolitan city with a historic old Delhi and the modern New Delhi. You can\'t define Delhi in just few words. The city is too dynamic for that. It\'s rich history saturated with old stories reflects in beautiful heritage buildings tucked around the sprawling city.',
     badges: [
       'Sightseeing Tours',
       'Sightseeing Tours',
@@ -148,10 +148,10 @@ const data = [
     ],
   },
   {
-    id: '1',
-    name: 'Bihar',
+    id: '3',
+    name: 'Maharastra',
     description:
-      'Bihar is a place full of history and spiritual significance. Located in the eastern part of India, this state is known as the land of monasteries. There are many things that make this place worth visiting.',
+      'Maharastra, often called \'Gateway to the Heart of India\'. Owing to its proximity to the Western Ghats, it is blessed with a picturesque backdrop of the montains on one side and has the beautiful Konkan Coastal belt on the other.',
     badges: [
       'Sightseeing Tours',
       'Sightseeing Tours',
@@ -160,62 +160,63 @@ const data = [
       'Sightseeing Tours',
     ],
     mainImg:
-      'https://images.unsplash.com/photo-1622194993926-1801586d460f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+      'https://www.holidify.com/images/bgImages/MAHARASHTRA-GOA.jpg',
     places: [
       {
-        area: 'Golghar',
-        description: 'This is golghar.',
+        area: 'Mumbai',
+        description: 'The Financial Capital of India, City of Dreams - formerly known as Bombay.',
         subImg:
-          'https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/category_a/patna/golghar/3300X2400.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg',
+          'https://www.holidify.com/images/bgImages/MUMBAI.jpg',
       },
       {
-        area: 'Mahabodhi Temple',
-        description: 'This is Mahabodhi Temple.',
+        area: 'Shirdi',
+        description: 'The home of Sai Baba.',
         subImg:
-          'https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/category_a/gaya/mahabodhi_temple/buddhist_gaya_category_a_mahabodhi_temple__pic_13.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg',
+          'https://www.holidify.com/images/bgImages/SHIRDI.jpg',
       },
       {
-        area: 'Maner Sharif',
-        description: 'This is Maner Sharif.',
+        area: 'Ajanta and Ellora Caves',
+        description: 'Considered as the finest example of ancient rock-cut caves, designated as UNESCO World Heritage Site.',
         subImg:
-          'https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/category_a/patna/maner_sharief/maner-sharif.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg',
+          'https://www.holidify.com/images/bgImages/AJANTA-AND-ELLORA-CAVES.jpg',
       },
       {
-        area: 'Bihar Museum',
-        description: 'This is Bihar Museum.',
+        area: 'Mahabaleshwar',
+        description: 'A hill station located in the Western Ghats, well known for its strawberries, numerous rivers and majestic peaks.',
         subImg:
-          'https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/category_a/patna/bihar_museum/bihar-museum.png/jcr:content/renditions/cq5dam.web.1280.765.jpeg',
+          'https://www.holidify.com/images/bgImages/MAHABALESHWAR.jpg',
       },
       {
-        area: 'Takhat Sri Harimandir Ji',
-        description: 'This is Patna Sahib.',
-        subImg: 'http://www.pmc.bihar.gov.in/assets/img/patna%20sahib.jpg',
+        area: 'Nashik',
+        description: 'The religious Hindu city, host to the Kumbh Mela every 12 years.',
+        subImg: 'https://www.holidify.com/images/bgImages/NASIK.jpg',
       },
       {
-        area: 'Vishwa Shanti Stupa',
-        description: 'This is Vishwa Shanti Stupa.',
+        area: 'Aurangabad',
+        description: 'The Tourism Capital of Maharastra, home to Ajanta and Ellora Caves.',
         subImg:
-          'https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/category_a/nalanda/shanti_stupa/vishwa-shanti-stupa-rajgir.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg',
+          'https://www.holidify.com/images/bgImages/AURANGABAD.jpg',
       },
     ],
     items: [
       {
-        itemName: 'Madhubani Painting',
-        description: 'This is Madhubani Painting.',
+        itemName: 'Kolhauri Chappals',
+        description: 'World famous hand-made leather chappals and sandals of Kolhapur.',
         itemImg:
-          'https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/handicrafts_product_photo/stone/10.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg',
+          'https://www.outlookindia.com/traveller/wp-content/uploads/2017/03/ART-AND-CRAFTS3_TI.jpg',
       },
       {
-        itemName: 'Stone Craft',
-        description: 'This is Stone Craft.',
+        itemName: 'Paithani Sari',
+        description: 'Sarees made of finest silk with an ornamented zari pallav and border.',
         itemImg:
-          'https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/handicrafts_product_photo/madhubani/madhubani_1.png/jcr:content/renditions/cq5dam.web.1280.765.jpeg',
+          'https://www.outlookindia.com/traveller/wp-content/uploads/2017/03/ART-AND-CRAFTS2_TI.jpg',
       },
       {
-        itemName: 'Wood Carvings',
-        description: 'This is Wood craft.',
+          
+        itemName: 'Warli Paintings',
+        description: 'The tribal wall paintings of the famous Warli tribe.',
         itemImg:
-          'https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/handicrafts_product_photo/wood/4.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg',
+          'https://5.imimg.com/data5/PI/TE/MY-13589378/2016-07-05-16-53-05-500x500.jpg',
       },
     ],
   },
