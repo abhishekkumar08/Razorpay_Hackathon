@@ -8,10 +8,10 @@ const data = [
       'Bihar is a place full of history and spiritual significance. Located in the eastern part of India, this state is known as the land of monasteries. There are many things that make this place worth visiting.',
     badges: [
       'Sightseeing Tours',
-      'Sightseeing Tours',
-      'Sightseeing Tours',
-      'Sightseeing Tours',
-      'Sightseeing Tours',
+      'Art & Crafts',
+      'Culture',
+      'Religious Places',
+      'Music & Dance',
     ],
     mainImg:
       'https://images.unsplash.com/photo-1622194993926-1801586d460f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
@@ -79,11 +79,11 @@ const data = [
     description:
       '"The Capital City of India", Delhi is a cosmopolitan city with a historic old Delhi and the modern New Delhi. You can\'t define Delhi in just few words. The city is too dynamic for that. It\'s rich history saturated with old stories reflects in beautiful heritage buildings tucked around the sprawling city.',
     badges: [
-      'Sightseeing Tours',
-      'Sightseeing Tours',
-      'Sightseeing Tours',
-      'Sightseeing Tours',
-      'Sightseeing Tours',
+        'Sightseeing Tours',
+        'Art & Crafts',
+        'Culture',
+        'Religious Places',
+        'Music & Dance',
     ],
     mainImg:
       'https://www.hotelierindia.com/public/styles/full_img/public/images/2020/03/26/travel-4813654_1920.jpg?itok=va5ff5Dk',
@@ -151,11 +151,11 @@ const data = [
     description:
       'Maharastra, often called \'Gateway to the Heart of India\'. Owing to its proximity to the Western Ghats, it is blessed with a picturesque backdrop of the montains on one side and has the beautiful Konkan Coastal belt on the other.',
     badges: [
-      'Sightseeing Tours',
-      'Sightseeing Tours',
-      'Sightseeing Tours',
-      'Sightseeing Tours',
-      'Sightseeing Tours',
+        'Sightseeing Tours',
+        'Art & Crafts',
+        'Culture',
+        'Religious Places',
+        'Music & Dance',
     ],
     mainImg:
       'https://www.holidify.com/images/bgImages/MAHARASHTRA-GOA.jpg',
