@@ -200,22 +200,22 @@ const data = [
     ],
     items: [
       {
-        itemName: 'Madhubani Painting',
-        description: 'This is Madhubani Painting.',
+        itemName: 'Kolhauri Chappals',
+        description: 'World famous hand-made leather chappals and sandals of Kolhapur.',
         itemImg:
-          'https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/handicrafts_product_photo/stone/10.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg',
+          'https://www.outlookindia.com/traveller/wp-content/uploads/2017/03/ART-AND-CRAFTS3_TI.jpg',
       },
       {
-        itemName: 'Stone Craft',
-        description: 'This is Stone Craft.',
+        itemName: 'Paithani Sari',
+        description: 'Sarees made of finest silk with an ornamented zari pallav and border.',
         itemImg:
-          'https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/handicrafts_product_photo/madhubani/madhubani_1.png/jcr:content/renditions/cq5dam.web.1280.765.jpeg',
+          'https://www.outlookindia.com/traveller/wp-content/uploads/2017/03/ART-AND-CRAFTS2_TI.jpg',
       },
       {
-        itemName: 'Wood Carvings',
-        description: 'This is Wood craft.',
+        itemName: 'Warli Paintings',
+        description: 'The tribal wall paintings of the famous Warli tribe.',
         itemImg:
-          'https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/handicrafts_product_photo/wood/4.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg',
+          'https://5.imimg.com/data5/PI/TE/MY-13589378/2016-07-05-16-53-05-500x500.jpg',
       },
     ],
   },
