@@ -9,25 +9,6 @@
   margin: 0.5rem;
 }
 
-.btn {
-  margin-top: 30px;
-}
-
-button {
-  height: 2em;
-  padding: 1.5em auto;
-  margin: 1em auto;
-  background-color: #8478cc;
-  border: none;
-  border-radius: 3px;
-  text-transform: uppercase;
-  letter-spacing: 0.3em;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-button:hover {
-  letter-spacing: 0.2em;
-  background-color: #f08c99;
-}
 
 #box {
   margin-left: 40px;
