@@ -56,8 +56,8 @@ const TopDestination = ({ item }) => {
           </div>
         </div>
       </div>
-       {/* destinations */}
-       <div style={{ padding: '1rem' }}>
+      {/* destinations */}
+      <div style={{ padding: '1rem' }}>
         <div
           style={{
             marginBottom: '2rem',
@@ -88,6 +88,12 @@ const TopDestination = ({ item }) => {
                   paddingTop: '0.5rem',
                   height: '400px',
                   width: '300px',
+                  borderRadius: '2rem',
+                  alignItems: 'center',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'space-between',
+                  padding: '0.5rem',
                 }}
               >
                 <div>
@@ -102,16 +108,19 @@ const TopDestination = ({ item }) => {
                   <h4>{place.area}</h4>
                   <p> {place.description}</p>
                 </div>
-               
-                  <button type="submit" className="card-stats">Order Now!</button>
-                
+
+                <div>
+                  <button type="submit" className="card-stats">
+                    Order Now!
+                  </button>
+                </div>
               </div>
             );
           })}
         </div>
       </div>
-       {/* antique things */}
-       <div style={{ padding: '1rem' }}>
+      {/* antique things */}
+      <div style={{ padding: '1rem' }}>
         <div
           style={{
             marginBottom: '2rem',
@@ -140,7 +149,12 @@ const TopDestination = ({ item }) => {
                     paddingTop: '0.5rem',
                     height: '400px',
                     width: '300px',
-                    borderRadius: '50px',
+                    borderRadius: '2rem',
+                    alignItems: 'center',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'space-between',
+                    padding: '0.5rem',
                   }}
                 >
                   <div>
@@ -154,16 +168,20 @@ const TopDestination = ({ item }) => {
                     <h4>{thing.itemName}</h4>
                     <p>{thing.description}</p>
                   </div>
-                 
-                    <button type="submit" className="card-stats">Order Now!</button>
-                 
+
+                  <div>
+                    <button type="submit" className="card-stats">
+                      Order Now!
+                    </button>
+                  </div>
                 </div>
               </div>
             );
           })}
         </div>
       </div>
-      </div>
-  )};
+    </div>
+  );
+};
 
 export default TopDestination;

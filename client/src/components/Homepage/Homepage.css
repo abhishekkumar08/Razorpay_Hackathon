@@ -9,7 +9,6 @@
   margin: 0.5rem;
 }
 
-
 #box {
   margin-left: 40px;
 }
@@ -18,4 +17,5 @@
   border-radius: 10rem;
   padding-left: 10px;
   padding-right: 10px;
+  height: 40px;
 }

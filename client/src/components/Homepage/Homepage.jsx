@@ -63,14 +63,18 @@ const Homepage = () => {
               }}
             />
           </div>
-          <div id="box">
-            <input id="boxx" type="button" value="Search" />
-          </div>
         </div>
       </div>
 
       {/* states */}
-      <div style={{ position: 'absolute', top: '30rem', marginLeft: '6rem' }}>
+      <div
+        style={{
+          position: 'absolute',
+          top: '30rem',
+          marginLeft: '6rem',
+          display: 'flex',
+        }}
+      >
         {filteredData.map((item, index) => {
           return (
             <div
@@ -83,6 +87,7 @@ const Homepage = () => {
                 padding: '0.5rem',
                 textAlign: 'center',
                 borderRadius: '50%',
+                margin: '1rem 3rem 1rem 1rem',
               }}
             >
               <div>
