@@ -212,6 +212,7 @@ const data = [
           'https://www.outlookindia.com/traveller/wp-content/uploads/2017/03/ART-AND-CRAFTS2_TI.jpg',
       },
       {
+          
         itemName: 'Warli Paintings',
         description: 'The tribal wall paintings of the famous Warli tribe.',
         itemImg:
