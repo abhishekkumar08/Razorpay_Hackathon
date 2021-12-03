@@ -5,6 +5,7 @@ import './Homepage.css';
 
 const Homepage = () => {
   const [state, setState] = useState('');
+  const [filteredData, setFilteredData] = useState([...data]);
   return (
     <div
       style={{
@@ -50,13 +51,42 @@ const Homepage = () => {
               type="text"
               placeholder="Where are you going?"
               value={state}
-              onChange={(e) => setState(e.target.value)}
+              onChange={(e) => {
+                setState(e.target.value);
+                setFilteredData(
+                  data.filter((item) =>
+                    item.name
+                      .toLowerCase()
+                      .includes(e.target.value.toLowerCase())
+                  )
+                );
+              }}
             />
           </div>
           <div id="box">
             <input id="boxx" type="button" value="Search" />
           </div>
         </div>
+      </div>
+
+      {/* states */}
+      <div style={{ position: 'absolute', top: '30rem', marginLeft: '6rem' }}>
+        {filteredData.map((item, index) => {
+          return (
+            <div
+              key={index}
+              style={{
+                background: '#fff',
+                color: 'black',
+                width: '100px',
+                height: '100px',
+                padding: '0.5rem',
+              }}
+            >
+              {item.name}
+            </div>
+          );
+        })}
       </div>
 
       {/* features */}
