@@ -21,12 +21,18 @@ const TopDestination = ({ item }) => {
           style={{
             textAlign: 'center',
             display: 'flex',
-            justifyContent: 'center',
+            justifyContent: 'flex-start',
           }}
         >
           <div style={{ width: '60rem', display: 'flex' }}>
-            <div>
-              <img src={item.mainImg} alt="Bihar" width="300" height="300" />
+            <div style={{ marginRight: '2rem' }}>
+              <img
+                src={item.mainImg}
+                alt="Bihar"
+                width="300"
+                height="300"
+                style={{ borderRadius: '20%' }}
+              />
             </div>
             <div style={{ padding: '0rem 1rem 1rem 1rem' }}>
               <div
@@ -48,8 +54,12 @@ const TopDestination = ({ item }) => {
                   justifyContent: 'space-evenly',
                 }}
               >
-                {item.badges.map((badge) => {
-                  return <div className="destination-badge">{badge}</div>;
+                {item.badges.map((badge, index) => {
+                  return (
+                    <div className="destination-badge" key={index}>
+                      {badge}
+                    </div>
+                  );
                 })}
               </div>
             </div>
@@ -77,9 +87,10 @@ const TopDestination = ({ item }) => {
             justifyContent: 'center',
           }}
         >
-          {item.places.map((place) => {
+          {item.places.map((place, index) => {
             return (
               <div
+                key={index}
                 className="card"
                 style={{
                   color: '#63687A',
@@ -138,9 +149,9 @@ const TopDestination = ({ item }) => {
             justifyContent: 'center',
           }}
         >
-          {item.items.map((thing) => {
+          {item.items.map((thing, index) => {
             return (
-              <div className="card">
+              <div className="card" key={index}>
                 <div
                   style={{
                     color: '#63687A',
