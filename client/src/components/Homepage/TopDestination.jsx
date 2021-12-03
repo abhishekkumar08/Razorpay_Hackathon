@@ -56,6 +56,60 @@ const TopDestination = ({ item }) => {
           </div>
         </div>
       </div>
+       {/* destinations */}
+       <div style={{ padding: '1rem' }}>
+        <div
+          style={{
+            marginBottom: '2rem',
+            textAlign: 'center',
+            fontSize: '1.5rem',
+            fontWeight: '700',
+          }}
+        >
+          Iconic Places
+        </div>
+        <div
+          style={{
+            background: '#0F1624',
+            display: 'flex',
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+          }}
+        >
+          {item.places.map((place) => {
+            return (
+              <div
+                className="card"
+                style={{
+                  color: '#63687A',
+                  fontSize: '1rem',
+                  textAlign: 'center',
+                  paddingTop: '0.5rem',
+                  height: '400px',
+                  width: '300px',
+                }}
+              >
+                <div>
+                  <img
+                    className="card-style-img"
+                    src={place.subImg}
+                    alt="item"
+                  />
+                </div>
+
+                <div className=" card-text">
+                  <h4>{place.area}</h4>
+                  <p> {place.description}</p>
+                </div>
+               
+                  <button type="submit" className="card-stats">Order Now!</button>
+                
+              </div>
+            );
+          })}
+        </div>
+      </div>
       </div>
   )};
 
