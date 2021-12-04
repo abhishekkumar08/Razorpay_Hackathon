@@ -1,5 +1,6 @@
 import './Homepage.css';
 import './TopDestination.css';
+import logo from '../../assets/logo.png';
 
 function loadScript(src) {
   return new Promise((resolve) => {
@@ -37,9 +38,9 @@ const TopDestination = ({ item }) => {
       currency: data.currency,
       amount: data.amount.toString(),
       order_id: data.id,
-      name: 'Donation',
-      description: 'Thank you for nothing. Please give us some money',
-      image: 'http://localhost:1337/logo.svg',
+      name: 'Order now',
+      description: 'Thank you for time. Your order is on its way.',
+      image: 'https://i.imgur.com/3g7nmJC.png',
       handler: function (response) {
         alert(response.razorpay_payment_id);
         alert(response.razorpay_order_id);
@@ -177,7 +178,7 @@ const TopDestination = ({ item }) => {
                     type="submit"
                     className="card-stats"
                     onClick={displayRazorpay}
-                    >
+                  >
                     Order Now!
                   </button>
                 </div>
