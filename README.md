@@ -30,15 +30,21 @@ To get over this problem, our solution would enable them to sell their goods dir
 ### Tech Stack:
 
 1. Frontend:
+
    a. HTML
+
    b. CSS
+
    c. JavaScript
+
    d. ReactJs
 
 2. Backend
+
    a. NodeJs
 
 3. API (for payment)
+
    a. Razorpay Payments API
 
 ### Future Scope:
@@ -46,6 +52,8 @@ To get over this problem, our solution would enable them to sell their goods dir
 1. Collaborations can be made with the state’s government to provide various schemes and packages through the website that would help in the exposure and growth of the tourism industry.
 
 2. In hard times, like the present covid scenario, customers can be provided with an option while checking out to payment, whether they would like to donate some extra tip for the local vendor and the delivery staff.
+
+#
 
 # Getting Started with Create React App
 
