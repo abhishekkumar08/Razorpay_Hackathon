@@ -1,6 +1,5 @@
 import './Homepage.css';
 import './TopDestination.css';
-import logo from '../../assets/logo.png';
 
 function loadScript(src) {
   return new Promise((resolve) => {
