@@ -42,6 +42,7 @@ const TopDestination = ({ item }) => {
       description: 'Thank you for time. Your order is on its way.',
       image: 'https://i.imgur.com/3g7nmJC.png',
       handler: function (response) {
+        alert('Payment Successful');
         alert(response.razorpay_payment_id);
         alert(response.razorpay_order_id);
         alert(response.razorpay_signature);
