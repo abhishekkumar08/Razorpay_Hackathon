@@ -1,4 +1,4 @@
-# Our problem Statement was :
+# Problem Statement :
 
 Build For Small Businesses: A solution that is built for use by small businesses and solves a real problem with a valid use
 
@@ -13,7 +13,7 @@ On top of that, the present COVID-19 pandemic has affected the travel & tourism 
 This has had a direct affect on local small businesses attached to the tourist spots as there is no one to buy their goods physically.
 To get over this problem, our solution would enable them to sell their goods directly to the customer through our e-commerce website. This would ensure their income doesn’t diminish in scenarios like the current one.
 
-### How does our site work ?
+## How does our site work ?
 
 1. The user visits the landing page and is presented by a state wise menu consisting of the famous places to visit in that state and their renowned local handicraft and handloom products.
 
@@ -27,7 +27,7 @@ To get over this problem, our solution would enable them to sell their goods dir
 
 6. This would not only provide a boost to their income, but also give exposure to their work on a global platform. Employment opportunities will also be created in such small towns as he logistics team would need delivery staff to buy the goods form the local vendor and send it to the company’s warehouse for further dispatchement.
 
-### Tech Stack:
+## Tech Stack:
 
 1. Frontend:
 
@@ -43,17 +43,28 @@ To get over this problem, our solution would enable them to sell their goods dir
 
    a. NodeJs
 
+   b. ExpressJs
+
 3. API (for payment)
 
    a. Razorpay Payments API
 
-### Future Scope:
+## Future Scope:
 
 1. Collaborations can be made with the state’s government to provide various schemes and packages through the website that would help in the exposure and growth of the tourism industry.
 
 2. In hard times, like the present covid scenario, customers can be provided with an option while checking out to payment, whether they would like to donate some extra tip for the local vendor and the delivery staff.
 
-#
+## Screenshots
+
+![image](https://user-images.githubusercontent.com/59651136/144719403-3f43d003-1dea-482d-bf8f-b141afdbf7e9.png)
+![image](https://user-images.githubusercontent.com/59651136/144719410-f6a802ed-5731-467a-a43c-6d54f32b3f31.png)
+![image](https://user-images.githubusercontent.com/59651136/144719417-6bede111-f5de-4817-b3d2-9080bad04cfd.png)
+![image](https://user-images.githubusercontent.com/59651136/144719424-dcc5997a-bed1-409b-a551-9cffffa9fb53.png)
+![image](https://user-images.githubusercontent.com/59651136/144719430-d9d7153f-b186-48ee-ac0f-2d5c68911709.png)
+![image](https://user-images.githubusercontent.com/59651136/144719433-5b4ca6c9-7677-42b4-aa64-6a59f86e9413.png)
+![image](https://user-images.githubusercontent.com/59651136/144719442-344e456a-264a-4aa0-88ea-3646307280f0.png)
+![image](https://user-images.githubusercontent.com/59651136/144719448-2a1c26cf-a748-4bbf-b4ad-f3b894637670.png)
 
 # Getting Started with Create React App
 
@@ -67,63 +78,3 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-This is Watchlist website.
