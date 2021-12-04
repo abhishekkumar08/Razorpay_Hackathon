@@ -2,7 +2,7 @@ import './About.css';
 const About = () => {
   return (
     <>
-      <div id="About" style={{ height: '90vh' }}>
+      <div id="About" style={{ height: '97vh' }}>
         <div
           className="container"
           style={{

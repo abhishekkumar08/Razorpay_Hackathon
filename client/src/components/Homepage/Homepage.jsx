@@ -88,6 +88,7 @@ const Homepage = () => {
                 textAlign: 'center',
                 borderRadius: '50%',
                 margin: '1rem 3rem 1rem 1rem',
+                cursor: 'pointer',
               }}
             >
               <div>
@@ -193,6 +194,7 @@ const Homepage = () => {
         Explore our top destinations
       </div>
 
+        
       <div
         style={{
           display: 'flex',

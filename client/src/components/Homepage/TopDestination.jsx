@@ -153,7 +153,7 @@ const TopDestination = ({ item }) => {
                   paddingTop: '0.5rem',
                   height: '400px',
                   width: '300px',
-                  borderRadius: '2rem',
+                  borderRadius: '3rem !important',
                   alignItems: 'center',
                   display: 'flex',
                   flexDirection: 'column',
@@ -169,7 +169,7 @@ const TopDestination = ({ item }) => {
                   />
                 </div>
 
-                <div className=" card-text">
+                <div className="card-text">
                   <h4>{place.area}</h4>
                   <p> {place.description}</p>
                 </div>
@@ -180,7 +180,7 @@ const TopDestination = ({ item }) => {
                     className="card-stats"
                     onClick={displayRazorpay}
                   >
-                    Order Now!
+                    Order Your Tour!
                   </button>
                 </div>
               </div>
@@ -218,7 +218,7 @@ const TopDestination = ({ item }) => {
                     paddingTop: '0.5rem',
                     height: '400px',
                     width: '300px',
-                    borderRadius: '2rem',
+                    borderRadius: '3rem !important',
                     alignItems: 'center',
                     display: 'flex',
                     flexDirection: 'column',

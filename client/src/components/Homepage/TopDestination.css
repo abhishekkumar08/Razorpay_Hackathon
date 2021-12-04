@@ -12,7 +12,7 @@
 }
 .card-text {
   grid-area: text;
-  margin: 25px;
+  /* margin: 25px; */
 }
 .card-text p {
   color: grey;
