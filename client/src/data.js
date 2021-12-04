@@ -3,7 +3,7 @@ const data = [
     id: '1',
     name: 'Bihar',
     iconImg:
-      'https://iconape.com/wp-content/files/sj/257322/png/government-of-bihar-logo.png',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Seal_of_Bihar.svg/800px-Seal_of_Bihar.svg.png',
     description:
       'Bihar is a place full of history and spiritual significance. Located in the eastern part of India, this state is known as the land of monasteries. There are many things that make this place worth visiting.',
     badges: [
@@ -57,13 +57,13 @@ const data = [
         itemName: 'Madhubani Painting',
         description: 'Madhubani Painting has become synonymous with art and craft of Bihar in the whole world.',
         itemImg:
-          'https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/handicrafts_product_photo/stone/10.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg',
+          'https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/handicrafts_product_photo/madhubani/madhubani_1.png/jcr:content/renditions/cq5dam.web.1280.765.jpeg',
       },
       {
         itemName: 'Stone Craft',
         description: 'A unique ancient handcraft of excellent artistic quality made out of marble and granite.',
         itemImg:
-          'https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/handicrafts_product_photo/madhubani/madhubani_1.png/jcr:content/renditions/cq5dam.web.1280.765.jpeg',
+          'https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/handicrafts_product_photo/stone/10.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg',
       },
       {
         itemName: 'Wood Carvings',
@@ -76,6 +76,8 @@ const data = [
   {
     id: '2',
     name: 'Delhi',
+    iconImg:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Seal_of_the_National_Capital_Territory_of_Delhi.svg/800px-Seal_of_the_National_Capital_Territory_of_Delhi.svg.png',
     description:
       '"The Capital City of India", Delhi is a cosmopolitan city with a historic old Delhi and the modern New Delhi. You can\'t define Delhi in just few words. The city is too dynamic for that. It\'s rich history saturated with old stories reflects in beautiful heritage buildings tucked around the sprawling city.',
     badges: [
@@ -148,6 +150,8 @@ const data = [
   {
     id: '3',
     name: 'Maharastra',
+    iconImg:
+      'https://upload.wikimedia.org/wikipedia/commons/2/26/Seal_of_Maharashtra.png',
     description:
       'Maharastra, often called \'Gateway to the Heart of India\'. Owing to its proximity to the Western Ghats, it is blessed with a picturesque backdrop of the montains on one side and has the beautiful Konkan Coastal belt on the other.',
     badges: [

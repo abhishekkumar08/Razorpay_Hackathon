@@ -63,6 +63,7 @@ const TopDestination = ({ item }) => {
         boxShadow: '30px 30px 60px #080c14,-30px -30px 60px #162034',
         maxWidth: '1200px',
         margin: '2rem',
+        padding: '2rem',
       }}
     >
       <div
@@ -81,7 +82,7 @@ const TopDestination = ({ item }) => {
             <div style={{ marginRight: '2rem' }}>
               <img
                 src={item.mainImg}
-                alt="Bihar"
+                alt="state-logo"
                 width="300"
                 height="300"
                 style={{ borderRadius: '20%' }}
