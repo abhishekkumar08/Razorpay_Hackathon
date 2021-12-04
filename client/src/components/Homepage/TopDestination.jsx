@@ -1,7 +1,61 @@
 import './Homepage.css';
 import './TopDestination.css';
+import logo from '../../assets/logo.png';
+
+function loadScript(src) {
+  return new Promise((resolve) => {
+    const script = document.createElement('script');
+    script.src = src;
+    script.onload = () => {
+      resolve(true);
+    };
+    script.onerror = () => {
+      resolve(false);
+    };
+    document.body.appendChild(script);
+  });
+}
 
 const TopDestination = ({ item }) => {
+  async function displayRazorpay() {
+    const res = await loadScript(
+      'https://checkout.razorpay.com/v1/checkout.js'
+    );
+
+    if (!res) {
+      alert('Razorpay SDK failed to load. Are you online?');
+      return;
+    }
+
+    const data = await fetch('http://localhost:1337/razorpay', {
+      method: 'POST',
+    }).then((t) => t.json());
+
+    console.log('dataaa', data);
+
+    const options = {
+      key: 'rzp_test_7NFjEzrn3WQR0c',
+      currency: data.currency,
+      amount: data.amount.toString(),
+      order_id: data.id,
+      name: 'Order now',
+      description: 'Thank you for time. Your order is on its way.',
+      image: 'https://i.imgur.com/3g7nmJC.png',
+      handler: function (response) {
+        alert('Payment Successful');
+        alert(response.razorpay_payment_id);
+        alert(response.razorpay_order_id);
+        alert(response.razorpay_signature);
+      },
+      prefill: {
+        name: '',
+        email: '',
+        phone_number: '',
+      },
+    };
+    const paymentObject = new window.Razorpay(options);
+    paymentObject.open();
+  }
   console.log(item.places);
   return (
     <div
@@ -10,6 +64,7 @@ const TopDestination = ({ item }) => {
         boxShadow: '30px 30px 60px #080c14,-30px -30px 60px #162034',
         maxWidth: '1200px',
         margin: '2rem',
+        padding: '2rem',
       }}
     >
       <div
@@ -21,12 +76,18 @@ const TopDestination = ({ item }) => {
           style={{
             textAlign: 'center',
             display: 'flex',
-            justifyContent: 'center',
+            justifyContent: 'flex-start',
           }}
         >
           <div style={{ width: '60rem', display: 'flex' }}>
-            <div >
-              <img src={item.mainImg} alt="Bihar" width="300" height="300" />
+            <div style={{ marginRight: '2rem' }}>
+              <img
+                src={item.mainImg}
+                alt="state-logo"
+                width="300"
+                height="300"
+                style={{ borderRadius: '20%' }}
+              />
             </div>
             <div style={{ padding: '0rem 1rem 1rem 1rem' }}>
               <div
@@ -48,16 +109,20 @@ const TopDestination = ({ item }) => {
                   justifyContent: 'space-evenly',
                 }}
               >
-                {item.badges.map((badge) => {
-                  return <div className="destination-badge">{badge}</div>;
+                {item.badges.map((badge, index) => {
+                  return (
+                    <div className="destination-badge" key={index}>
+                      {badge}
+                    </div>
+                  );
                 })}
               </div>
             </div>
           </div>
         </div>
       </div>
-       {/* destinations */}
-       <div style={{ padding: '1rem' }}>
+      {/* destinations */}
+      <div style={{ padding: '1rem' }}>
         <div
           style={{
             marginBottom: '2rem',
@@ -77,9 +142,10 @@ const TopDestination = ({ item }) => {
             justifyContent: 'center',
           }}
         >
-          {item.places.map((place) => {
+          {item.places.map((place, index) => {
             return (
               <div
+                key={index}
                 className="card"
                 style={{
                   color: '#63687A',
@@ -88,6 +154,12 @@ const TopDestination = ({ item }) => {
                   paddingTop: '0.5rem',
                   height: '400px',
                   width: '300px',
+                  borderRadius: '2rem',
+                  alignItems: 'center',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'space-between',
+                  padding: '0.5rem',
                 }}
               >
                 <div>
@@ -102,16 +174,23 @@ const TopDestination = ({ item }) => {
                   <h4>{place.area}</h4>
                   <p> {place.description}</p>
                 </div>
-               
-                  <button type="submit" className="card-stats">Order Now!</button>
-                
+
+                <div>
+                  <button
+                    type="submit"
+                    className="card-stats"
+                    onClick={displayRazorpay}
+                  >
+                    Order Now!
+                  </button>
+                </div>
               </div>
             );
           })}
         </div>
       </div>
-       {/* antique things */}
-       <div style={{ padding: '1rem' }}>
+      {/* antique things */}
+      <div style={{ padding: '1rem' }}>
         <div
           style={{
             marginBottom: '2rem',
@@ -129,9 +208,9 @@ const TopDestination = ({ item }) => {
             justifyContent: 'center',
           }}
         >
-          {item.items.map((thing) => {
+          {item.items.map((thing, index) => {
             return (
-              <div className="card">
+              <div className="card" key={index}>
                 <div
                   style={{
                     color: '#63687A',
@@ -140,7 +219,12 @@ const TopDestination = ({ item }) => {
                     paddingTop: '0.5rem',
                     height: '400px',
                     width: '300px',
-                    borderRadius: '50px',
+                    borderRadius: '2rem',
+                    alignItems: 'center',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'space-between',
+                    padding: '0.5rem',
                   }}
                 >
                   <div>
@@ -154,16 +238,24 @@ const TopDestination = ({ item }) => {
                     <h4>{thing.itemName}</h4>
                     <p>{thing.description}</p>
                   </div>
-                 
-                    <button type="submit" className="card-stats">Order Now!</button>
-                 
+
+                  <div>
+                    <button
+                      type="submit"
+                      className="card-stats"
+                      onClick={displayRazorpay}
+                    >
+                      Order Now!
+                    </button>
+                  </div>
                 </div>
               </div>
             );
           })}
         </div>
       </div>
-      </div>
-  )};
+    </div>
+  );
+};
 
 export default TopDestination;
