@@ -18,36 +18,36 @@ const data = [
     places: [
       {
         area: 'Golghar',
-        description: 'This is golghar.',
+        description: 'An enormous granary built in 1786, after the terrible impact of 1770 famine.',
         subImg:
           'https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/category_a/patna/golghar/3300X2400.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg',
       },
       {
         area: 'Mahabodhi Temple',
-        description: 'This is Mahabodhi Temple.',
+        description: 'An ancient Buddhist temple in Bodh Gaya, marking the location where the Buddha is said to have attained enlightenment.',
         subImg:
           'https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/category_a/gaya/mahabodhi_temple/buddhist_gaya_category_a_mahabodhi_temple__pic_13.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg',
       },
       {
         area: 'Maner Sharif',
-        description: 'This is Maner Sharif.',
+        description: 'Located 25 kilometers west of Patna, Maner Sharif used to be the principal site of learning and knowledge.',
         subImg:
           'https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/category_a/patna/maner_sharief/maner-sharif.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg',
       },
       {
         area: 'Bihar Museum',
-        description: 'This is Bihar Museum.',
+        description: 'Located in Patna, Bihar Museum has a huge collection of artifacts that showcase the rich history and culture of Bihar.',
         subImg:
           'https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/category_a/patna/bihar_museum/bihar-museum.png/jcr:content/renditions/cq5dam.web.1280.765.jpeg',
       },
       {
-        area: 'Takhat Sri Harimandir Ji',
-        description: 'This is Patna Sahib.',
+        area: 'Patna Sahib',
+        description: 'Takhat Sri Harimandr Ji Patna Sahib is the second holiest Takhat. Revered as the birthplace of Sri Guru Gobind Singh Ji Maharaj.',
         subImg: 'http://www.pmc.bihar.gov.in/assets/img/patna%20sahib.jpg',
       },
       {
         area: 'Vishwa Shanti Stupa',
-        description: 'This is Vishwa Shanti Stupa.',
+        description: 'Also known as Peace Pagoda, it is located at the highest point of Ratnagiri hill, at an altitude of 400 m in Rajgir.',
         subImg:
           'https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/category_a/nalanda/shanti_stupa/vishwa-shanti-stupa-rajgir.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg',
       },
@@ -55,19 +55,19 @@ const data = [
     items: [
       {
         itemName: 'Madhubani Painting',
-        description: 'This is Madhubani Painting.',
+        description: 'Madhubani Painting has become synonymous with art and craft of Bihar in the whole world.',
         itemImg:
           'https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/handicrafts_product_photo/stone/10.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg',
       },
       {
         itemName: 'Stone Craft',
-        description: 'This is Stone Craft.',
+        description: 'A unique ancient handcraft of excellent artistic quality made out of marble and granite.',
         itemImg:
           'https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/handicrafts_product_photo/madhubani/madhubani_1.png/jcr:content/renditions/cq5dam.web.1280.765.jpeg',
       },
       {
         itemName: 'Wood Carvings',
-        description: 'This is Wood craft.',
+        description: 'Made out of Gambhar wood, having huge religious importance for the Buddhist followers and pilgrims.',
         itemImg:
           'https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/handicrafts_product_photo/wood/4.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg',
       },
@@ -90,36 +90,36 @@ const data = [
     places: [
       {
         area: 'Red Fort',
-        description: 'This is Red Fort.',
+        description: 'A historical fortification in the old Delhi area. Every year, the Indian Prime Minister unfurls the national flag here on the Independence Day.',
         subImg:
           'https://www.holidify.com/images/cmsuploads/compressed/Delhi_Red_fort_20190312151147.jpg',
       },
       {
         area: 'Humanyun\'s Tomb',
-        description: 'This is Humanyun\'s Tomb.',
+        description: 'The final resting place of the Mughal Emperor Humayun. Located in Delhi, it is the first garden-tomb in the Indian subcontinent.',
         subImg:
           'https://www.holidify.com/images/cmsuploads/compressed/Humayun-tomb_20170809201316.jpg',
       },
       {
         area: 'Qutab Minar',
-        description: 'This is Qutab Minar.',
+        description: 'A minearet or a victory tower, Qutub Minar, a UNESCO World Heritage Site, is the second tallest monument in Delhi.',
         subImg:
           'https://www.holidify.com/images/cmsuploads/compressed/Qutub_Minar_in_the_monsoons_20170908115259.jpg',
       },
       {
         area: 'Lotus Temple',
-        description: 'This is Lotus Temple.',
+        description: 'An edifice dedicated to the Baha\'i faith. The magnificent structure of this building unfolds in the form of a stupendous white petal lotus.',
         subImg:
           'https://holidify.com/images/attr_wiki/compressed/attr_wiki_57.jpg',
       },
       {
         area: 'Akshardham Temple',
-        description: 'This is Akshardham Temple.',
+        description: 'Dedicated to Lord Swaminarayan. Akshardham has made its way to the Guinness Book of World Records as the World\'s Largest Comprehensive Hindu Temple.',
         subImg: 'https://www.holidify.com/images/cmsuploads/compressed/attr_wiki_4067_20191212124026.jpg',
       },
       {
         area: 'India Gate',
-        description: 'This is India Gate.',
+        description: 'Dedicated to 82,000 Indian and British soldiers who died during the First World War and the Third Anglo-Afghan War, this monument has the names of 13,300 servicemen inscribed on its surface.',
         subImg:
           'https://www.holidify.com/images/cmsuploads/compressed/5621259188_e74d63cb05_b_20180302140149.jpg',
       },
