@@ -1,7 +1,60 @@
 import './Homepage.css';
 import './TopDestination.css';
+import logo from '../../assets/logo.png';
+
+function loadScript(src) {
+  return new Promise((resolve) => {
+    const script = document.createElement('script');
+    script.src = src;
+    script.onload = () => {
+      resolve(true);
+    };
+    script.onerror = () => {
+      resolve(false);
+    };
+    document.body.appendChild(script);
+  });
+}
 
 const TopDestination = ({ item }) => {
+  async function displayRazorpay() {
+    const res = await loadScript(
+      'https://checkout.razorpay.com/v1/checkout.js'
+    );
+
+    if (!res) {
+      alert('Razorpay SDK failed to load. Are you online?');
+      return;
+    }
+
+    const data = await fetch('http://localhost:1337/razorpay', {
+      method: 'POST',
+    }).then((t) => t.json());
+
+    console.log('dataaa', data);
+
+    const options = {
+      key: 'rzp_test_7NFjEzrn3WQR0c',
+      currency: data.currency,
+      amount: data.amount.toString(),
+      order_id: data.id,
+      name: 'Order now',
+      description: 'Thank you for time. Your order is on its way.',
+      image: 'https://i.imgur.com/3g7nmJC.png',
+      handler: function (response) {
+        alert(response.razorpay_payment_id);
+        alert(response.razorpay_order_id);
+        alert(response.razorpay_signature);
+      },
+      prefill: {
+        name: '',
+        email: '',
+        phone_number: '',
+      },
+    };
+    const paymentObject = new window.Razorpay(options);
+    paymentObject.open();
+  }
   console.log(item.places);
   return (
     <div
@@ -122,7 +175,11 @@ const TopDestination = ({ item }) => {
                 </div>
 
                 <div>
-                  <button type="submit" className="card-stats">
+                  <button
+                    type="submit"
+                    className="card-stats"
+                    onClick={displayRazorpay}
+                  >
                     Order Now!
                   </button>
                 </div>
@@ -182,7 +239,11 @@ const TopDestination = ({ item }) => {
                   </div>
 
                   <div>
-                    <button type="submit" className="card-stats">
+                    <button
+                      type="submit"
+                      className="card-stats"
+                      onClick={displayRazorpay}
+                    >
                       Order Now!
                     </button>
                   </div>
