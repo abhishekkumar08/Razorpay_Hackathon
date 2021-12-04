@@ -1,6 +1,5 @@
 .card {
   display: grid;
-  border-radius: 18px;
   background: white;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   font-family: roboto;
@@ -30,7 +29,7 @@
   max-width: 200px;
   background-color: #8478cc;
   border: none;
-  border-radius: 8px;
+  border-radius: 2rem !important;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -49,6 +48,7 @@
   transition: 0.5s ease;
   cursor: pointer;
   margin: 30px;
+  border-radius: 2rem !important;
 }
 .card-style-img {
   grid-area: image;
