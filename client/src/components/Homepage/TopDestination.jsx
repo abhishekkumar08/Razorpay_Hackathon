@@ -26,9 +26,12 @@ const TopDestination = ({ item }) => {
       return;
     }
 
-    const data = await fetch('http://localhost:4000/razorpay', {
-      method: 'POST',
-    }).then((t) => t.json());
+    const data = await fetch(
+      'https://razorpay-hackathon-backend.herokuapp.com/razorpay',
+      {
+        method: 'POST',
+      }
+    ).then((t) => t.json());
 
     console.log('dataaa', data);
 
