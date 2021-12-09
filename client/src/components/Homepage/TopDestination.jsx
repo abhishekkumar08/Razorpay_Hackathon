@@ -26,7 +26,7 @@ const TopDestination = ({ item }) => {
       return;
     }
 
-    const data = await fetch('http://localhost:1337/razorpay', {
+    const data = await fetch('http://localhost:4000/razorpay', {
       method: 'POST',
     }).then((t) => t.json());
 
@@ -42,9 +42,9 @@ const TopDestination = ({ item }) => {
       image: 'https://i.imgur.com/3g7nmJC.png',
       handler: function (response) {
         alert('Payment Successful');
-        alert(response.razorpay_payment_id);
-        alert(response.razorpay_order_id);
-        alert(response.razorpay_signature);
+        // alert(response.razorpay_payment_id);
+        // alert(response.razorpay_order_id);
+        // alert(response.razorpay_signature);
       },
       prefill: {
         name: '',
